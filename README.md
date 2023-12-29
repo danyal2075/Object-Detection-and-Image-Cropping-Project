@@ -16,6 +16,10 @@ Run the main.py script to execute supporting scripts that perform object detecti
 ![](runs/detect/exp/image0.jpg)
 
 ## Cropped samples
+<p align="center">
+  <img src="./Cropped_images/bicycle_2.png" width="350" title="hover text">
+  <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text">
+</p>
 ![](Cropped_images/bicycle_2.png)
 ![](Cropped_images/car_1.png)
 ![](Cropped_images/dog_0.png)
