@@ -19,7 +19,7 @@ Run the main.py script to execute supporting scripts that perform object detecti
 <p align="center">
   <img src="./Cropped_images/bicycle_2.png" width="350">
   <img src="./Cropped_images/car_1.png" width="350" >
-  <img src=".Cropped_images/dog_0.png" width="350" >
+  <img src="./Cropped_images/dog_0.png" width="350" >
 </p>
 ![](Cropped_images/bicycle_2.png)
 ![](Cropped_images/car_1.png)
