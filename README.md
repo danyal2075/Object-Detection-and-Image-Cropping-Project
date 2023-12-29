@@ -13,9 +13,9 @@ Run the main.py script to execute supporting scripts that perform object detecti
 ![](dog.jpg)
 ## Predicted Sample
 
-![]('runs/detect/exp/image0.jpg')
+![](runs/detect/exp/image0.jpg)
 
 ## Cropped samples
-![]('Cropped_images/bicycle_2.png')
-![]('Cropped_images/car_1.png')
-![]('Cropped_images/dog_0.png')
+![](Cropped_images/bicycle_2.png)
+![](Cropped_images/car_1.png)
+![](Cropped_images/dog_0.png)
