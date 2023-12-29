@@ -10,7 +10,7 @@ Run the main.py script to execute supporting scripts that perform object detecti
 - Cropped_images folder: Contains images of the predicted objects cropped from the original image.
 
 ## Orignal sample
-![]('dog.jpg')
+![](dog.jpg)
 ## Predicted Sample
 
 ![]('runs/detect/exp/image0.jpg')
