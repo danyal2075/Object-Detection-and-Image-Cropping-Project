@@ -4,21 +4,37 @@ from PIL import Image
 from crop import object_crop
 from model import model_prediction
 import time
+import os
+import shutil
 
 
 
-def main(image_path,info_path):
+
+def main(image_path):
+
+    # Delete previous prediction.
+    for i in os.listdir("./runs/detect"):
+        shutil.rmtree(f"./runs/detect/{i}")
+    
+    # New Predictions    
     result = model_prediction(image_path)
     result.show(), result.save() 
+    
     # Creating DataFrame of the results. Use saved to crop the image
     df = result.pandas().xyxy[0]
     df.to_csv('results.csv', index = False)
     time.sleep(5)
+    
+    # Finding csv file.
+    for f in os.listdir():
+        if f.endswith('.csv'):
+            info_path = f
+
+    # use of csv file to get coordinates, width and height to crop the image
     object_crop(image_path, info_path)
 
 
 
 if __name__ == "__main__":
-    image_path = "dog.jpg"
-    info_path = "results.csv"
-    main(image_path,info_path)
+    image_path = r".\test_data\dog.jpg"
+    # main(image_path)
