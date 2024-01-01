@@ -13,6 +13,9 @@ def object_crop(image_path, info_path):
 
         # Crop the object from the image
         cropped_object = image[ymin:ymax, xmin:xmax]
-        # cv2.imshow(f"{class_name}",cropped_object)
+        cv2.imshow(f"{class_name}",cropped_object)
+        cv2.waitKey(0)
+    
         # Save or process the cropped object as needed
         cv2.imwrite(f'Cropped_images/{class_name}_{index}.png', cropped_object)
+    cv2.destroyAllWindows()
