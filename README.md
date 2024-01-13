@@ -1,5 +1,5 @@
 # Object Detection and Image Cropping Project
-This project focuses on performing object detection using a pretrained YOLOv5s model. Following the detection, the script crops the original image based on the model's outputs, isolating the predicted objects.
+This project focuses on performing object detection using a pretrained YOLOv5s model. Following the detection, the script detects object and crops the original image based on the model's outputs, isolating the predicted objects.
 
 # Test Flag:
 For testing code, there should be a function named test(). When calling the test() function without specifying an image path, it will display an image both before and after cropping, along with the detection of an object. This implies selecting any image from the testing dataset.
@@ -11,7 +11,7 @@ Moreover, if an image URI or URL is supplied to the test() function, it will dow
 
 ## Usage
 Run the main.py script to execute supporting scripts that perform object detection, cropping and create two folders:
-
+Terminal : python main.py --data-path 'path-to-image'
 - runs folder: Contains labeled images with predicted bounding boxes.
 
 - Cropped_images folder: Contains images of the predicted objects cropped from the original image.
